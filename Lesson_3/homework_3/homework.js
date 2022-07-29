@@ -6,7 +6,7 @@ function getNames(countries) {
         (массив countryNames, каждый элемент этого массива - название страны (поле name у каждого объекта))
     */
 
-    //return countryNames;
+    
 		var countryNames = [];
 
 		for (item of countries) {
@@ -14,8 +14,11 @@ function getNames(countries) {
 		countryNames.push(item.name);
 		
 	}
+
 	return countryNames;
 }
+
+
 var names = getNames(countries);
 console.log(names);
 //пример: после getNames(countries) в names будет храниться ['Afganistan', 'Angola', ...]
@@ -27,7 +30,7 @@ function getCapitals(countries) {
         (массив countryCapitals, каждый элемент этого массива - название столицы страны (поле capital у каждого объекта страны))
     */
 
-    //return countryCapitals;
+  
 
 		var countryCapitals = [];
 
@@ -49,7 +52,7 @@ function getAverageArea(countries) {
         получается, нужно посчитать среднее арифметическое. название поля - area
         результат с точностью до 1 знака после запятой
     */
-    //return averageArea;
+  
 
 	
 	var countryAreas = [];
@@ -63,6 +66,7 @@ function getAverageArea(countries) {
 		var averageArea = countryAreas.map(i=>x+=i, x=0).reverse()[0] / countries.length;
 		return averageArea.toFixed(1);
 }
+
 var average = getAverageArea(countries)
 //пример: в average -> 601162.3
 
