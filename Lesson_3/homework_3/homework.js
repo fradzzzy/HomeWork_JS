@@ -10,9 +10,7 @@ function getNames(countries) {
 		var countryNames = [];
 
 		for (item of countries) {
-	
-		countryNames.push(item.name);
-		
+			countryNames.push(item.name);
 	}
 
 	return countryNames;
